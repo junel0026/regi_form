@@ -4,13 +4,46 @@
 
 <h1> Student Registration Form </h1>
 <form action="stu_regi.php" method="post">
-Student Name: <input type="text" name="firstname" placeholder="First Name"> -
+Student Name : <input type="text" name="firstname" placeholder="First Name"> -
 <input type="text" name="lastname" placeholder="Last Name"><br> <br>
-Father's Name: <input type="text" name="Fname"><br> <br>
-Date of birth: <input type="number" name="day" placeholder="Day"> -
+Father's Name : <input type="text" name="Fname"><br> <br>
+Date of birth : <input type="number" name="day" placeholder="Day"> -
                <input type="number" name="month" placeholder="Month"> -
                <input type="number" name="year" placeholder="Year"> <br>
-<input type="submit" value="Submit">
+Mobile Number : +95 - <input type="text" name="mobileph"> <br>
+Email : <input type="text" name="email" placeholder="name23@gmail.com"> <br>
+Password : <input type="text" name="password"> <br>
+Gender :
+  <input type="radio" id="yes" name="choice" value="Male">
+  <label for="yes">Male</label>
+
+  <input type="radio" id="no" name="choice" value="Female">
+  <label for="no">Female</label><br><br>
+
+Department :
+  <input type="radio" id="one" name="department" value="English">
+  <label for="one">English</label>
+
+  <input type="radio" id="two" name="department" value="Computer">
+  <label for="two">Computer</label>
+
+  <input type="radio" id="three" name="department" value="Business">
+  <label for="three">Business</label> <br>
+
+  <label for="course">Course :</label>
+  <select name="course" id="course">
+    <option value="Choose">Choose</option>
+    <option value="Social">Social Studies</option>
+    <option value="Computer">Computer Studies</option>
+    <option value="English">English</option>
+    <option value="Music">Music</option>
+  </select><br>
+City : <input type="text" name="city"> <br>
+Address: <br>
+<textarea name="address" id="address" rows="4" cols="50""></textarea><br><br>
+
+
+<input type="submit" value="Register">
 </form>
 
 </body>

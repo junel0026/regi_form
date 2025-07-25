@@ -123,10 +123,10 @@ if (!empty($errors)) {
     echo "Mobile: +95 - " . htmlspecialchars($mobile) . "<br>";
     echo "Email: " . htmlspecialchars($email) . "<br>";
     echo "Gender: " . htmlspecialchars($gender) . "<br>";
+    echo "Department: " . htmlspecialchars($department) . "<br>";
     echo "Course: " . htmlspecialchars($course) . "<br>";
     echo "City: " . htmlspecialchars($city) . "<br>";
     echo "Address: " . nl2br(htmlspecialchars($address)) . "<br>";
-    echo "Department: " . htmlspecialchars($department) . "<br>";
 
 
 } else {
@@ -136,10 +136,10 @@ if (!empty($errors)) {
     echo "Mobile: +95 - " . htmlspecialchars($mobile) . "<br>";
     echo "Email: " . htmlspecialchars($email) . "<br>";
     echo "Gender: " . htmlspecialchars($gender) . "<br>";
+    echo "Department: " . htmlspecialchars($department) . "<br>";
     echo "Course: " . htmlspecialchars($course) . "<br>";
     echo "City: " . htmlspecialchars($city) . "<br>";
     echo "Address: " . nl2br(htmlspecialchars($address)) . "<br>";
-    echo "Department: " . htmlspecialchars($department) . "<br>";
 }
 
 ?>

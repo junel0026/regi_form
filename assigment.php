@@ -11,7 +11,7 @@
 <body>
 
 <h1> Student Registration Form </h1>
-<form action="stu_regi.php" method="post">
+<form action="regiform.php" method="post">
   Student Name:
   <input type="text" name="firstname" placeholder="First name">
   <span class="error">

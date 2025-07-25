@@ -1,18 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submitted Data</title>
+</head>
+<body>
+
 <?php
 $firstname = $_POST['firstname'] ?? '';
+$lastname = $_POST['lastname'] ?? '';
 
 if (empty($firstname)) {
-    // Redirect back with error
-    header("Location: form.php?error=firstname");
+    header("Location: assignment.php?error=firstname");
     exit();
 }
 
-// Collect all values (no error checking for other fields here)
-$lastname = $_POST["lastname"] ?? '';
-
 if (empty($lastname)) {
-    // Redirect back with error
-    header("Location: form.php?error=lastname");
+    header("Location: assignment.php?error=lastname");
     exit();
 }
 
@@ -29,8 +33,8 @@ $city = $_POST["city"] ?? '';
 $address = $_POST["address"] ?? '';
 
 echo "<h1>Submitted Registration Details</h1>";
-echo "First Name = $firstname - Last Name = $lastname <br>
-Father's name = $father_name <br>
+echo "First Name = $firstname , Last Name = $lastname<br>
+Father's Name = $father_name <br>
 Date of Birth = $dob_day-$dob_month-$dob_year <br>
 Mobile Phone Number = $mobile <br>
 Email = $email <br>
@@ -40,3 +44,6 @@ Department = $department<br>
 City = $city<br>
 Address = $address<br>";
 ?>
+
+</body>
+</html>
